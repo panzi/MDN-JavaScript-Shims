@@ -8,8 +8,7 @@
 (function (undefined) {
 	"use strict";
 
-	// shiming helper function
-
+	// shiming helper function:
 	function shim(obj, shims) {
 		for (var name in shims) {
 			if (!(name in obj)) {
@@ -101,7 +100,6 @@
 		},
 
 		forEach: function forEach(callback, thisArg) {
-			'use strict';
 			var T, k;
 
 			if (this == null) {
@@ -293,7 +291,6 @@
 		},
 
 		reduce: function (callback, opt_initialValue) {
-			'use strict';
 			if (null === this || 'undefined' === typeof this) {
 				// At the moment all modern browsers, that support strict mode, have
 				// native implementation of Array.prototype.reduce. For instance, IE8
@@ -328,7 +325,6 @@
 		},
 
 		reduceRight: function (callback, opt_initialValue) {
-			'use strict';
 			if (null === this || 'undefined' === typeof this) {
 				// At the moment all modern browsers, that support strict mode, have
 				// native implementation of Array.prototype.reduceRight. For instance,
